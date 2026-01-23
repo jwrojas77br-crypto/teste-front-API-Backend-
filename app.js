@@ -2,7 +2,12 @@ const API_URL = "https://script.google.com/macros/s/AKfycbw4zS1nd-H-iscN91KgWiVC
 
 
 if ("serviceWorker" in navigator) {
-navigator.serviceWorker.register("sw.js");
+	window.addEventListener("load", () => {
+		navigator.serviceWorker
+			.register("./sw.js", { scope: "./" })
+			.then(reg => console.log("SW registrado:", reg.scope))
+			.catch(err => console.error("Error registrando SW:", err));
+	});
 }
 
 

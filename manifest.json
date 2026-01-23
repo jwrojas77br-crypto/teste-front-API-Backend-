@@ -1,16 +1,37 @@
 {
   "name": "PWA Sheets Demo",
   "short_name": "PWA Demo",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#06b6d4",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%2306b6d4' width='192' height='192'/><text x='50%' y='50%' font-size='100' fill='white' text-anchor='middle' dominant-baseline='middle'>PWA</text></svg>",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
+      "src": "./icons/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "./icons/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./icons/screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./icons/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ],
   "categories": ["productivity"]
