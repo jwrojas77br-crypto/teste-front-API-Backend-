@@ -1,8 +1,5 @@
-// Desarrollo: timestamp automático diario
-const CACHE = `pwa-cache-${Date.now()}`;
-// Producción: descomentar la línea siguiente y comentar la anterior
-// const CACHE = "pwa-cache-v1";
-
+// Producción: versión de caché fija para probar actualizaciones
+const CACHE = "pwa-cache-v2";
 
 self.addEventListener("install", e => {
 	// Permite que el SW nuevo tome control sin esperar al viejo
