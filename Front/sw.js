@@ -1,5 +1,5 @@
 // Producción: versión de caché fija para probar actualizaciones
-const CACHE = "pwa-cache-v2";
+const CACHE = "ssc-admin-v20";
 
 self.addEventListener("install", e => {
 	// Permite que el SW nuevo tome control sin esperar al viejo
@@ -13,9 +13,29 @@ self.addEventListener("install", e => {
 				"./styles.css",
 				"./app.js",
 				"./manifest.json",
+
+				"./Config/config.js",
+				"./Api/api.client.js",
+
+				"./Login/login.css",
+				"./Login/login.api.js",
+				"./Login/login.view.js",
+				"./Login/login.controller.js",
+
+				"./Session/session.storage.js",
+				"./Session/session.api.js",
+				"./Session/session.service.js",
+
+				"./Authenticator/authenticator.api.js",
+				"./Authenticator/authenticator.service.js",
+				"./Authenticator/authenticator.view.js",
+				"./Authenticator/authenticator.css",
+				"./Authenticator/authenticator.controller.js",
+
+				"./Vendor/qrcode.min.js",
+				"./Authenticator/qr.generator.js",
+
 				"./icons/icon.png",
-				"./icons/screenshot-mobile.png",
-				"./icons/screenshot-desktop.png"
 			]);
 		})
 	);

@@ -8,6 +8,9 @@
 	--muted: #94a3b8;
 	--accent: #06b6d4;
 	--accent-strong: #0ea5e9;
+	--primary-blue: #2563eb;
+	--primary-blue-soft: #1d4ed8;
+	--primary-blue-strong: #0ea5e9;
 	--shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
 }
 
@@ -29,7 +32,8 @@ body {
 }
 
 .container {
-	width: min(900px, 100%);
+	width: min(480px, 100%);
+	max-width: 480px;
 	background: var(--panel);
 	border: 1px solid rgba(255, 255, 255, 0.06);
 	border-radius: 18px;
@@ -40,9 +44,35 @@ body {
 
 h1 {
 	text-align: center;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.5px;
-	margin-bottom: 18px;
+	margin-bottom: 0;
+	font-size: clamp(2rem, 4vw, 2.4rem);
+}
+
+.hero {
+	display: grid;
+	place-items: center;
+	gap: 12px;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.hero-icon {
+	display: grid;
+	place-items: center;
+}
+
+.hero-icon img {
+	width: 90px;
+	height: 90px;
+}
+
+.hero-subtitle {
+	margin: 0;
+	color: #94a3b8;
+	font-weight: 500;
+	font-size: 0.96rem;
 }
 
 h3 {

@@ -1,6 +1,6 @@
 {
-  "name": "PWA Sheets Demo",
-  "short_name": "PWA Demo",
+  "name": "SSC-Admin",
+  "short_name": "SSC-Admin",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -22,17 +22,18 @@
   ],
   "screenshots": [
     {
-      "src": "./icons/screenshot-mobile.png",
+      "src": "./icons/ScreenshotsMobile.PNG",
       "sizes": "540x720",
-      "type": "image/png",
-      "form_factor": "wide"
+      "type": "image/png"
     },
     {
-      "src": "./icons/screenshot-desktop.png",
+      "src": "./icons/ScreenshotsDesk.PNG",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
     }
   ],
-  "categories": ["productivity"]
+  "categories": [
+    "productivity"
+  ]
 }
